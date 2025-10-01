@@ -1,0 +1,5 @@
+{
+  "name": "Interactive Signal Filtering Demo",
+  "description": "A web application that visualizes the effect of different signal processing filters (Low-Pass, Kalman) on real-time mouse coordinates. Users can enable/disable filters and tune their parameters to observe the impact on position estimation.",
+  "requestFramePermissions": []
+}
