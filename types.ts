@@ -18,10 +18,16 @@ export interface UKFSettings {
     r: number; // Measurement noise
 }
 
+export interface NoiseSettings {
+  enabled: boolean;
+  sigma: number; // Standard deviation of Gaussian noise
+}
+
 export interface FilterStates {
   isLowPassActive: boolean;
   isKalmanActive: boolean;
   isUKFActive: boolean;
+  showErrorGraph: boolean;
 }
 
 export interface FilterSettings {
@@ -29,6 +35,7 @@ export interface FilterSettings {
   kalman: KalmanSettings;
   ukf: UKFSettings;
   states: FilterStates;
+  noise: NoiseSettings;
 }
 
 // Minimal Matrix Type
