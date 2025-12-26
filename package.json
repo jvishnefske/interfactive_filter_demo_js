@@ -5,14 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./",
+    "test": "echo 'No tests configured yet' && exit 0",
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.14",
     "@types/node": "^22.14.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.21",
     "parcel": "^2.16.0",
     "postcss": "^8.5.6",
