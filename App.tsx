@@ -11,6 +11,7 @@ const App: React.FC = () => {
     isLowPassActive: true,
     isKalmanActive: true,
     isUKFActive: true,
+    showErrorGraph: false,
   });
 
   const [lowPassSettings, setLowPassSettings] = useState<LowPassSettings>({ alpha: 0.1 });

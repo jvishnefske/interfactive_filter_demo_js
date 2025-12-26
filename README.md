@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Interactive Signal Filtering Demo
 
-# Run and deploy your AI Studio app
+A real-time visualization demonstrating how signal processing filters (Low-Pass, Kalman, and Unscented Kalman) estimate and smooth mouse position data. Watch filters compete to track your cursor with minimal lag and maximum accuracy.
 
-This contains everything you need to run your app locally.
+## Quick Start
 
-View your app in AI Studio: https://ai.studio/apps/drive/1YQIHSiLcEFEBvUhD49cfoWWxxPcXJBbr
+```bash
+npm install
+npm run dev
+# Open http://localhost:1234 in your browser
+```
 
-## Run Locally
+## Features
 
-**Prerequisites:**  Node.js
+- **Low-Pass Filter**: Simple exponential smoothing with configurable alpha parameter
+- **Kalman Filter**: Linear state estimation with position and velocity tracking
+- **Unscented Kalman Filter (UKF)**: Nonlinear filter using coordinated turn motion model
+- Interactive parameter tuning via sliders
+- Real-time visualization of filter outputs vs raw mouse position
 
+## Development
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+See the [Makefile](./Makefile) for available build targets:
+
+```bash
+make build    # Build for production
+make dev      # Start development server
+make lint     # Run linter
+make clean    # Remove build artifacts
+```
+
+## License
+
+MIT
