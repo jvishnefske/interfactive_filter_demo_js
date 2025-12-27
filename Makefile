@@ -15,13 +15,13 @@ build:
 dev:
 	npm run dev
 
-# Run tests (Jest)
+# Run tests (Vitest)
 test:
 	npm test
 
 # Run tests with coverage
 coverage:
-	npm test -- --coverage
+	npm run test:coverage
 
 # Run linter
 lint:
